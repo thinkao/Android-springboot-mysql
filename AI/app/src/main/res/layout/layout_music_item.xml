@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:id="@+id/song_album"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/bofang" />
+
+        <TextView
+            android:id="@+id/song_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/song_album"
+            android:text="you belong with me"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/singer_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/song_album"
+            android:layout_toEndOf="@+id/song_album"
+            android:layout_toRightOf="@+id/song_album"
+            android:text="Taylar Swift"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/singer_name_tv"
+
+            />
+    </RelativeLayout>
+
+</LinearLayout>

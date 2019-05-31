@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+</head>
+<body>
+<section class="content">
+    <form  th:action="@{/user/addUser}" method="post">
+        <!--1.SpringMVC中配置HiddenHttpMethodFilter
+            2.创建一个POST表单
+            3.创建一个Input name=_method;值就是请求方法
+        -->
+        <input type="hidden" name="_method" value="put" th:if="${user!=null}"/>
+        <input type="hidden" name="uname" th:if="${user!=null}" th:value="${user.uname}">
+
+        <div class="form-group">
+            <label for="uname" class="col-sm-2 control-label">学生姓名</label>
+            <div class="col-sm-3">
+                <input type="text" th:value="${user!=null}?${user.uname}" name="uname" class="form-control" id="uname" >
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <label for="username" class="col-sm-2 control-label">账号</label>
+            <div class="col-sm-3">
+                <input type="text" th:value="${user!=null}?${user.username}" name="username" class="form-control" id="username">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="upassword" class="col-sm-2 control-label">密码</label>
+            <div class="col-sm-3">
+                <input type="text" th:value="${user!=null}?${user.upassword}" name="upassword" class="form-control" id="upassword">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-success col-sm-3">提交</button>
+            </div>
+        </div>
+    </form>
+</section>
+</body>
+</html>

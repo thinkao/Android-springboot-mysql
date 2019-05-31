@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.wxy.dao.CollectDao">
+
+    <!--查询所有收藏信息-->
+    <select id="getCollectAll" resultType="com.wxy.pojo.Collect">
+        select * from collect
+    </select>
+
+</mapper>

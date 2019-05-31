@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请选择您的吐槽方式："
+        android:textSize="22dp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_gravity="center"
+        android:layout_marginTop="110dp"/>
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:orientation="vertical"
+           android:layout_marginTop="60dp">
+           <Button
+               android:id="@+id/bt_user"
+               android:layout_width="180dp"
+               android:layout_height="60dp"
+               android:textSize="22dp"
+               android:layout_margin="30dp"
+               android:text="实名吐槽"
+               android:textColor="@android:color/white"
+               android:background="@drawable/tucao"/>
+
+           <Button
+               android:id="@+id/bt_nouser"
+               android:layout_width="180dp"
+               android:layout_height="60dp"
+               android:layout_margin="30dp"
+               android:textSize="22dp"
+               android:text="匿名吐槽"
+               android:textColor="@android:color/white"
+               android:background="@drawable/tucao"/>
+
+
+           <Button
+               android:id="@+id/bt_looksay"
+               android:layout_width="180dp"
+               android:layout_height="60dp"
+               android:layout_margin="30dp"
+               android:textSize="22dp"
+               android:text="查看吐槽"
+               android:textColor="@android:color/white"
+               android:background="@drawable/tucao"/>
+
+       </LinearLayout>
+
+</LinearLayout>

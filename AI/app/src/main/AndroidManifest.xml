@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.community">
+
+    <!--允许联网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--获取GSM（2g）、WCDMA（联通3g）等网络状态的信息  -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--获取wifi网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!--获取sd卡写的权限，用于文件上传和下载-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--允许读取手机状态 用于创建BmobInstallation-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--手机振动-->
+    <uses-permission android:name="android.premission.VIBRATE"></uses-permission>
+    <!--SD卡权限-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!--播放视频权限-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/launcher"
+        android:label="解忧君"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <provider
+            android:authorities="com.example.cameraalbumtest.fileprovider"
+            android:name="android.support.v4.content.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+        <!--闪屏页-->
+        <activity android:name=".activity.LauncherActivity">
+
+            android:configChanges="orientation|screenSize|keyboardHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <!--主页面-->
+
+        <activity android:name=".activity.MainActivity">
+
+        </activity>
+        <activity android:name=".activity.activity_mylist"></activity>
+        <activity android:name=".activity.activity_collect"></activity>
+        <activity android:name=".activity.activity_mygrade"></activity>
+        <activity android:name=".activity.activity_myset"></activity>
+        <activity android:name=".activity.activity_mymoney"></activity>
+        <activity android:name=".activity.show_good_info"></activity>
+        <activity android:name=".activity.activity_say"></activity>
+        <activity android:name=".activity.activity_sayone"></activity>
+        <activity android:name=".activity.activity_saytwo"></activity>
+        <activity android:name=".activity.activity_login">
+        </activity>
+        <activity android:name=".activity.activity_looksay"></activity>
+        <activity android:name=".activity.activity_register"></activity>
+        <activity android:name=".activity.activity_forget"></activity>
+        <activity android:name=".activity.activity_forgetone"></activity>
+        <activity android:name=".activity.activity_forgettwo"></activity>
+        <activity android:name=".activity.activity_message"></activity>
+        <activity android:name=".activity.activity_notification"></activity>
+        <activity android:name=".activity.activity_interest"></activity>
+        <activity android:name=".activity.activity_movie"></activity>
+        <activity android:name=".activity.activity_novel"></activity>
+        <activity android:name=".activity.activity_game"></activity>
+        <activity android:name=".activity.activity_music"></activity>
+        <activity android:name=".activity.activity_tuling"></activity>
+        <activity android:name=".activity.activity_shop"></activity>
+        <activity android:name=".activity.activity_head"></activity>
+        <activity android:name=".activity.activity_find"></activity>
+        <activity android:name=".activity.activity_erwei"></activity>
+        <activity android:name=".activity.activity_admin"></activity>
+        <activity android:name=".activity.activity_tucaoManager"></activity>
+        <activity android:name=".activity.activity_userManager"></activity>
+        <activity android:name=".activity.activity_money"></activity>
+        <activity android:name=".activity.activity_myeyes"></activity>
+        <activity android:name=".activity.activity_test"></activity>
+
+
+
+    </application>
+
+</manifest>

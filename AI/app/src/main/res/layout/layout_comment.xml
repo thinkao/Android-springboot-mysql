@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/comments"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+        <TextView
+            android:id="@+id/tv_find"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="20dp"
+            android:text="最新发现"/>
+        <View
+            android:layout_marginTop="12dp"
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:background="@android:color/darker_gray"
+            />
+
+
+
+        <TextView
+            android:id="@+id/tv_say"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textSize="20dp"
+            android:text="我要吐槽"/>
+        <View
+            android:layout_marginTop="12dp"
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:background="@android:color/darker_gray"
+            />
+        <TextView
+            android:id="@+id/tv_interest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textSize="20dp"
+            android:text="兴趣部落"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="260dp">
+        <TextView
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:text="比你优秀的人都在努力"/>
+        <TextView
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:layout_marginTop="170dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="18dp"
+            android:text="你怎能止步不前"/>
+    </LinearLayout>
+
+    <!--<ListView
+        android:id="@+id/lv_listview_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/info">
+
+    </ListView>-->
+
+
+
+</LinearLayout>

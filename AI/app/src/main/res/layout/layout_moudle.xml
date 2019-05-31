@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/sv_mou"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_mou"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/moduless">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+            <Button
+                android:id="@+id/bt_game"
+                android:textSize="25dp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/conrersss"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_margin="40dp"
+                android:text="游戏专区"/>
+            <Button
+                android:id="@+id/bt_movie"
+                android:textSize="25dp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/conrersss"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="40dp"
+                android:text="影视专区"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/bt_novel"
+                android:textSize="25dp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/conrersss"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_margin="40dp"
+                android:text="小说专区"/>
+            <Button
+                android:id="@+id/bt_music"
+                android:textSize="25dp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/conrersss"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="40dp"
+                android:text="歌曲专区"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/bt_shop"
+                android:textSize="25dp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/conrersss"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_margin="40dp"
+                android:text="商城专区"/>
+            <Button
+                android:id="@+id/bt_tuling"
+                android:textSize="25dp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/conrersss"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="40dp"
+                android:text="图灵专区"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

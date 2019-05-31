@@ -1,0 +1,4 @@
+AI为Android端
+springboot：Android链接数据库的接口
+ai.sql:数据库
+如果想正常运行及获取到数据请注意以下：1.运行Android项目之前先运行springboot后台接口。2.通过OKHTTP进行Json解析，请改将URL的IP改为本机IP
