@@ -58,7 +58,7 @@
         <dependency>
             <groupId>org.webjars</groupId>
             <artifactId>bootstrap</artifactId>
-            <version>4.0.0</version>
+            <version>4.3.1</version>
         </dependency>
 
         <!--分页插件 -->
